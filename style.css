@@ -1,0 +1,164 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.file-label span {
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-label span:hover {
+  background-color: #444;
+}
+
+input[type="text"], select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 80%;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.playlist-management {
+  margin-bottom: 20px;
+}
+
+.playlist-header, .create-playlist {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#playlist li {
+  padding: 10px;
+  margin-bottom: 6px;
+  background-color: #eaeaea;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#playlist li:hover {
+  background-color: #d0d0d0;
+}
+
+#playlist li.active {
+  background-color: #ccc;
+  font-weight: bold;
+}
+
+body.dark input[type="text"],
+body.dark select {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  border: 1px solid #444;
+}
+
+body.dark .file-label span,
+body.dark button {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+body.dark #playlist li {
+  background-color: #2a2a2a;
+  color: #f4f4f4;
+}
+
+body.dark #playlist li:hover {
+  background-color: #444;
+}
+
+body.dark #playlist li.active {
+  background-color: #555;
+}
+
+.player {
+  margin-top: 10px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  margin: 5px;
+  font-size: 1.1rem;
+}
+
+.progress-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+#volume {
+  width: 100%;
+}
